@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akrama Nadim - Aspiring CSE Student & AI Developer</title>
+    <title>Akrama Nadim - B.Tech CSE Student | AI & Software Developer</title>
+    <meta name="description" content="Professional portfolio of Akrama Nadim, B.Tech Computer Science student specializing in AI development, software engineering, and building innovative web applications.">
+    <meta name="keywords" content="Akrama Nadim, B.Tech CSE, AI Developer, Software Engineer, Machine Learning, Python, Web Development, Computer Science Student">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "1cadf455-1d15-4b6a-9416-73905fcf7df7", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "19c3884f-1a39-49d7-8d5d-e55ca2502ef8", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
