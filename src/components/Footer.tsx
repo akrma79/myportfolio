@@ -34,9 +34,10 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               Open to internships, collaborations, and innovative project opportunities.
             </p>
-            <a 
-              href="mailto:akramanadim79@gmail.com" 
+            <a
+              href="mailto:akramanadim79@gmail.com"
               className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              aria-label="Email to get in touch"
             >
               Get in Touch
             </a>
@@ -54,7 +55,7 @@ const Footer = () => {
               <Coffee className="text-yellow-600" size={16} />
             </div>
             <p className="text-gray-400 text-sm">
-              © 2025 Akrama Nadim. All rights reserved.
+              © {new Date().getFullYear()} Akrama Nadim. All rights reserved.
             </p>
           </div>
         </div>

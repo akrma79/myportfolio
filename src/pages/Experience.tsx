@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Users, Code, Trophy, Award, Calendar } from 'lucide-react';
+import { Briefcase, Trophy, Award, Calendar } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [

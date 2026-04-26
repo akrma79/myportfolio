@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Database, Bot, Wrench, Award, BookOpen, Zap } from 'lucide-react';
+import { Code, Database, Bot, Wrench, Award, Zap } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [

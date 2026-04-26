@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Globe, Utensils, Bot, Award, CheckCircle, Clock, Star } from 'lucide-react';
+import { ExternalLink, Github, Globe, Utensils, Award, CheckCircle, Clock, Star } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -19,7 +19,8 @@ const Projects = () => {
       status: "Completed",
       statusIcon: <CheckCircle className="text-green-400" size={16} />,
       color: "from-blue-500 to-cyan-500",
-      liveUrl: "http://akama.in/",
+      liveUrl: "https://akama.in/",
+      repoUrl: "https://github.com/akrma79", // optional: set to project repo when available
       featured: true
     },
     {
@@ -162,10 +163,15 @@ const Projects = () => {
                         View Live
                       </a>
                     )}
-                    <button className="flex items-center text-gray-400 hover:text-gray-300 transition-colors">
+                    <a
+                      href={project.repoUrl ?? "https://github.com/akrma79"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-gray-400 hover:text-gray-300 transition-colors"
+                    >
                       <Github size={16} className="mr-1" />
                       Source Code
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

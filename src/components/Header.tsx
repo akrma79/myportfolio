@@ -52,13 +52,13 @@ const Header = () => {
               </Link>
             ))}
             <div className="flex items-center space-x-4 ml-8">
-              <a href="mailto:akramanadim79@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="mailto:akramanadim79@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Email me">
                 <Mail size={20} />
               </a>
-              <a href="https://github.com/akrma79" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://github.com/akrma79" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors" aria-label="GitHub profile">
                 <Github size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/akrama-nadim-560216222/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/akrama-nadim-560216222/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors" aria-label="LinkedIn profile">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -66,8 +66,11 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
+            type="button"
             className="md:hidden text-gray-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
